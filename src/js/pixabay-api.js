@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create(
     {
-        baseURL: 'https://pixabay.com/api',
+        baseURL: 'https://pixabay.com/api/',
         params: {
             key: '51766868-0679c5e91819ef737119e63ee',
             q: 'query',
