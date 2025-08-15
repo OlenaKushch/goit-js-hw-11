@@ -13,7 +13,7 @@ search.addEventListener('submit', e => {
         iziToast.warning({
             title: 'Warning',
             message: 'This field must be filled',
-            position: 'topCenter'
+            position: 'topRight'
         });
         return;
     }
@@ -28,7 +28,7 @@ search.addEventListener('submit', e => {
                 iziToast.error({
                     title: 'Error',
                     message: 'Sorry, there are no images matching your search query. Please try again!',
-                    position: 'topCenter'
+                    position: 'topRight'
                 });
                 return;
             }
@@ -39,7 +39,7 @@ search.addEventListener('submit', e => {
             iziToast.error({
                 title: 'Error',
                 message: 'Please try again',
-                position: 'topCenter'
+                position: 'topRight'
             });
         
         });

@@ -103,7 +103,7 @@ ul {
   padding: 8px 16px;
   width: 91px;
   height: 40px;
-  background-color: #75bfb8;
+  background-color: #d95a2b;
 
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -114,7 +114,7 @@ ul {
 }
 .sub-btn:hover,
 .sub-btn:focus {
-  background-color: #255459;
+  background-color: #bf3617;
 }
 
 .form {
@@ -126,4 +126,39 @@ ul {
   margin-right: auto;
   margin-bottom: 32px;
   margin-top: 30px;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #ff7b00fa;
+  border-top: 4px solid #ff4b04;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 0 8px rgba(255, 7, 7, 0.4);
+  background: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: #db3434;
+  }
+  50% {
+    border-top-color: #b92929;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: #db3434;
+  }
 }
